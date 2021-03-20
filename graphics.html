@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="http://d3js.org/d3.v6.min.js"></script>
@@ -16,6 +17,7 @@
   <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>
   <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
   <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script>
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
@@ -32,7 +34,7 @@
       <div id="test" style="text-align: center; color: white;">
         <h2 style="font-family: 'Courier New', monospace;">Test your Safety!</h2>
         <form id = "myForm" onsubmit="genNumber()">
-          <br>
+
           <div class="row1">
             <div class="col-25">
               <label for="age">Enter Age: </label>
@@ -104,7 +106,7 @@
       <div id="dept"></div>
     </div>
     <div class="column" style="flex: 96%; max-width: 96%;">
-      <div id="age"></div>
+      <div id="threed"></div>
     </div>
   </div>
 </body>
@@ -377,7 +379,7 @@ setTimeout(nem);
   Highcharts.chart('bubble', {
     chart: {
       type: 'packedbubble',
-      height: '95%',
+      height: '85%',
       backgroundColor: 'rgba(0,0,0,0)'
 
     },
@@ -491,6 +493,10 @@ setTimeout(nem);
   Highcharts.chart('dept', {
     chart: {
       type: 'pie',
+      options3d: {
+      enabled: true,
+      alpha: 45
+        },
       height: '87%',
       backgroundColor: 'rgba(0,0,0,0)'
     },
@@ -511,6 +517,8 @@ setTimeout(nem);
     plotOptions: {
       pie: {
         allowPointSelect: true,
+        innerSize: 100,
+        depth: 45,
         cursor: 'pointer',
         dataLabels: {
           enabled: true,
@@ -519,7 +527,14 @@ setTimeout(nem);
         }
       }
     },
-
+    legend: {
+      itemStyle: {
+        color: 'white'
+      }
+    },
+    credits: {
+      enabled: false
+    },
     series: [{
       name: 'Department',
       data: [{
@@ -551,6 +566,83 @@ setTimeout(nem);
 
     }]
   });
+
+  // Give the points a 3D feel by adding a radial gradient
+  Highcharts.chart('threed', {
+    chart: {
+      type: 'area',
+      backgroundColor: 'rgba(0,0,0,0)'
+    },
+    title: {
+      text: 'Cases per age group',
+      style: {
+        color: '#ffffff'
+      }
+    },
+    xAxis: {
+      categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+      tickmarkPlacement: 'on',
+      title: {
+        enabled: false
+      }
+    },
+    yAxis: {
+      title: {
+        text: 'Billions'
+      },
+      labels: {
+        formatter: function () {
+          return this.value / 1000;
+        },
+        style: {
+          color: '#ffffff'
+        }
+      }
+    },
+    tooltip: {
+      split: true,
+      valueSuffix: ' millions'
+    },
+    plotOptions: {
+      area: {
+        stacking: 'normal',
+        lineColor: '#666666',
+        lineWidth: 1,
+        marker: {
+          lineWidth: 1,
+          lineColor: '#666666'
+        }
+      }
+    },
+    legend: {
+      itemStyle: {
+        color: 'white'
+      }
+    },
+    credits: {
+      enabled: false
+    },
+    series: [{
+      name: 'Asia',
+      data: [502, 635, 809, 947, 1402, 3634, 5268]
+    }, {
+      name: 'Africa',
+      data: [106, 107, 111, 133, 221, 767, 1766]
+    }, {
+      name: 'Europe',
+      data: [163, 203, 276, 408, 547, 729, 628]
+    }, {
+      name: 'America',
+      data: [18, 31, 54, 156, 339, 818, 1201]
+    }, {
+      name: 'Oceania',
+      data: [2, 2, 2, 6, 13, 30, 46]
+    }],
+    colors: ['#b8fff0', '#60dbc1', '#42a691', '#0c856b', '#035241', '#02261f']
+
+  });
+
+
 </script>
 
 </html>
