@@ -1,0 +1,222 @@
+[
+  {
+    "CaseNo": 1,
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "Date": 11-01-2020,
+    "Department": "A",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 20,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 2,
+    "City": "Delhi",
+    "State": "Delhi",
+    "Date": 12-02-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Single",
+    "Age": 21,
+    "Gender": "M"
+  },
+  {
+    "CaseNo": 3,
+    "City": "Bangalore",
+    "State": "Karnataka",
+    "Date": 13-02-2020,
+    "Department": "A",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 23,
+    "Gender": "M"
+  },
+  {
+    "CaseNo": 4,
+    "City": "Kolkata",
+    "State": "West Bengal",
+    "Date": 14-02-2020,
+    "Department": "A",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 28,
+    "Gender": "M"
+  },
+  {
+    "CaseNo": 5,
+    "City": "Chennai",
+    "State": "Tamil Nadu",
+    "Date": 15-04-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 24,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 6,
+    "City": "Pune",
+    "State": "Maharashtra",
+    "Date": 16-04-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 25,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 7,
+    "City": "Bangalore",
+    "State": "Karnataka",
+    "Date": 17-04-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Single",
+    "Age": 17,
+    "Gender": "M"
+  },
+  {
+    "CaseNo": 8,
+    "City": "Kolkata",
+    "State": "West Bengal",
+    "Date": 18-04-2020,
+    "Department": "C",
+    "Name": "X",
+    "MaritalStatus": "Single",
+    "Age": 15,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 9,
+    "City": "Chennai",
+    "State": "Tamil Nadu",
+    "Date": 19-04-2020,
+    "Department": "C",
+    "Name": "X",
+    "MaritalStatus": "Single",
+    "Age": 17,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 10,
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "Date": 20-05-2020,
+    "Department": "C",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 30,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 11,
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "Date": 21-05-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 35,
+    "Gender": "M"
+  },
+  {
+    "CaseNo": 12,
+    "City": "Delhi",
+    "State": "Delhi",
+    "Date": 22-06-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 45,
+    "Gender": "M"
+  },
+  {
+    "CaseNo": 13,
+    "City": "Bangalore",
+    "State": "Karnataka",
+    "Date": 23-03-2020,
+    "Department": "A",
+    "Name": "X",
+    "MaritalStatus": "Single",
+    "Age": 14,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 14,
+    "City": "Pune",
+    "State": "Maharashtra",
+    "Date": 24-03-2020,
+    "Department": "A",
+    "Name": "X",
+    "MaritalStatus": "Single",
+    "Age": 22,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 15,
+    "City": "Kolkata",
+    "State": "West Bengal",
+    "Date": 25-07-2020,
+    "Department": "A",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 50,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 16,
+    "City": "Chennai",
+    "State": "Tamil Nadu",
+    "Date": 26-08-2020,
+    "Department": "C",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 43,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 17,
+    "City": "Pune",
+    "State": "Maharashtra",
+    "Date": 27-09-2020,
+    "Department": "C",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 24,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 18,
+    "City": "Bangalore",
+    "State": "Karnataka",
+    "Date": 28-10-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 36,
+    "Gender": "F"
+  },
+  {
+    "CaseNo": 19,
+    "City": "Kolkata",
+    "State": "West Bengal",
+    "Date": 29-11-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Married",
+    "Age": 46,
+    "Gender": "M"
+  },
+  {
+    "CaseNo": 20,
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "Date": 30-12-2020,
+    "Department": "B",
+    "Name": "X",
+    "MaritalStatus": "Single",
+    "Age": 40,
+    "Gender": "M"
+  }
+]
