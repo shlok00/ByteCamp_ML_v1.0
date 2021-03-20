@@ -31,7 +31,7 @@
     <div class="column">
       <div id="test" style="text-align: center; color: white;">
         <h2 style="font-family: 'Courier New', monospace;">Test your Safety!</h2>
-        <form onsubmit="genNumber()">
+        <form id = "myForm" onsubmit="genNumber()">
           <br>
           <div class="row1">
             <div class="col-25">
@@ -86,8 +86,8 @@
     </div>
     <div class="column">
       <div id="test" style="text-align:center;">
-        <div id="result"></div>
-        <h2 style="color:white;">YOU ARE NOT SAFE!</h2>
+        <div id="result" style="visibility:hidden;"></div>
+        <h2 style="color:white;" id="resulttext"></h2>
       </div>
     </div>
     <div class="column">
@@ -109,12 +109,25 @@
   </div>
 </body>
 <script>
-  function genNumber = () => {
-    const nem = () => {
-      document.querySelector("#result").style.setProperty("--percent", 0.886);
-    };
-    setInterval(nem, 2000);
-    setTimeout(nem);
+var form = document.getElementById("myForm");
+function handleForm(event) { event.preventDefault(); }
+form.addEventListener('submit', handleForm);
+var n=0;
+const nem = () => {
+  document.querySelector("#result").style.setProperty("--percent", n);
+};
+setInterval(nem, 2000);
+setTimeout(nem);
+  function genNumber(){
+    document.getElementById('result').style.visibility = 'visible';
+    n = document.getElementById('fage').value/100;
+    if (n>=.70)
+    {document.getElementById('resulttext').innerHTML="YOU ARE NOT SAFE!";}
+    else if (n<.70 && n>=.40)
+    {document.getElementById('resulttext').innerHTML="NOT HIGH RISK BUT BE CAREFUL!";}
+    else {
+      document.getElementById('resulttext').innerHTML="YOU ARE ON THE SAFER SIDE!";
+    }
   };
 </script>
 <script>
